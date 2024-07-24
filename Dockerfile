@@ -1,8 +1,8 @@
-FROM python:3.9-alpine
-MAINTAINER Florian Dambrine <android.florian@gmail.com>
+FROM python:3.10-alpine
+LABEL Author="Florian Dambrine <android.florian@gmail.com>"
 
-ENV PYTHONUNBUFFERED 1
-ENV PYTHONPATH /opt/drone
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/opt/drone
 
 RUN mkdir -p /opt/drone
 WORKDIR /opt/drone
